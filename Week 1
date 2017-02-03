@@ -1,0 +1,18 @@
+#Week 1
+
+**What is Nodejs?** 
+
+Nodejs is a JavaScript runtime. It means that you can run your JavaScript in other places other than your browser. 
+
+**How do you I install it?** 
+
+Head to [https://nodejs.org]() and grab the packaged file for your operating system. 
+
+**What can you do with it?**
+
+There are ways that you can use nodejs. It can be used for having REST-ful APIs. It's easy to do so with the powerful `express` library. 
+We will look into doing a simple API. 
+
+**Getting started**
+
+All you need to know to get started with Nodejs is knowing JaveScript syntax. Let's do a super simple exercise 
