@@ -15,4 +15,32 @@ We will look into doing a simple API.
 
 **Getting started**
 
-All you need to know to get started with Nodejs is knowing JaveScript syntax. Let's do a super simple exercise 
+All you need to know to get started with Nodejs is knowing JaveScript syntax. Let's do a super simple exercise.
+ 
+ 
+Open your terminal and go to the directory that you created for this lesson. 
+Create a file called `hello.js`. You can use `nano` command to create a new file.
+
+```
+nano hello.js
+```
+
+Open it in your editor. Add the following in that file: 
+
+``` 
+console.log('hello world');
+```
+
+Save the file and run the following command: 
+
+```
+node hello.js
+```
+
+You should get the following output: 
+
+```
+hello world
+```
+
+You now have done a `hello world` program in nodejs. 
