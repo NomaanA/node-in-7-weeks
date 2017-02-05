@@ -7,13 +7,13 @@ Learning basics of node in 7 weeks. This is rough timeline for myself. I may cha
 * Install node form [nodejs.org](http://nodejs.org/)
 * create a file called `hello.js`
 * Do a `console.log` inside the `hello.js` to print `hello world` 
-* test everything is working by runnung the program: `node hello.js` 
+* test everything is working by running the program: `node hello.js` 
 
 ###Week 2: 
 * Create an express server (link to a video) 
 * understand basic of routes
 * Perform a GET and POST request
-* Basic of Respons methods 
+* Basic of Respond methods 
 
 ###Week 3:
 * Learn about MongoDB 

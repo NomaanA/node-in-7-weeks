@@ -51,7 +51,7 @@ it's good to know how to organize your code in Node. It uses a module system. He
 Let's use our hello.js in a different file. In order to do that, create another file called `main.js` and add the following:  
 
 ```ecmascript 6
-var hello = require('./hello');
+const hello = require('./hello');
 ```
 
 We are saying that I need `hello` file which is in the same directory hence `./`.
