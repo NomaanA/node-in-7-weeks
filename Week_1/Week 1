@@ -10,7 +10,7 @@ Head to [https://nodejs.org]() and grab the packaged file for your operating sys
 
 **What can you do with it?**
 
-There are ways that you can use nodejs. It can be used for having REST-ful APIs. It's easy to do so with the powerful `express` library. 
+There are ways that you can use Nodejs. It can be used for having REST-ful APIs. It's easy to do so with the powerful `express` library. 
 We will look into doing a simple API. 
 
 **Getting started**
@@ -43,4 +43,39 @@ You should get the following output:
 hello world
 ```
 
-You now have done a `hello world` program in nodejs. 
+You now have done a `hello world` program in Nodejs. 
+
+**What else is good to know?**
+
+it's good to know how to organize your code in Node. It uses a module system. Here is an example of that. 
+Let's use our hello.js in a different file. In order to do that, create another file called `main.js` and add the following:  
+
+```ecmascript 6
+var hello = require('./hello');
+```
+
+We are saying that I need `hello` file which is in the same directory hence `./`.
+If we look in our hello file, there is nothing from that file that is accessible from another file. We need to `export` object from `hello` file so other files can use it. Let's see how that looks: 
+
+```ecmascript 6
+exports.world = function() {
+  console.log('hell world');
+}
+```
+At this point, `hello` module has a function called `world` that can be used outside of the file. Let's use it: 
+
+In your `main.js` file continue adding this: 
+```ecmascript 6 
+hello.world();
+```
+Now, it's time to test our little export and import, in your terminal, write the following: 
+
+```
+node main.js
+```
+
+You should get: 
+
+```
+> hello world
+```
