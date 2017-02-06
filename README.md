@@ -11,7 +11,11 @@ Learning basics of node in 7 weeks. This is rough timeline for myself. I may cha
 * Hello world
 * require and export basics
 
-[WRITE UP](Week_1/Week1.html)
+[WRITE UP](_posts/Week_1/Week1.md)
+
+/<Week1.md>
+
+/<_posts/Week_1/Week1.md>
 
 
 ## Week 2: 
