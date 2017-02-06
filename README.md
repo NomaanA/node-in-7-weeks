@@ -11,7 +11,7 @@ Learning basics of node in 7 weeks. This is rough timeline for myself. I may cha
 * Hello world
 * require and export basics
 
-[WRITE UP](_posts/Week_1/Week1.md)
+{{ site.baseurl }}{% link _posts/Week_1/Week1.md %}
 
 
 
