@@ -1,1 +1,0 @@
-Go to [https://nomaana.github.io/node-in-7-weeks/](https://nomaana.github.io/node-in-7-weeks/)
