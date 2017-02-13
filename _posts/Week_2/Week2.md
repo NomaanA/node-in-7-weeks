@@ -45,18 +45,25 @@ app.get(route, (res, req)=>{
 })
 ```
 
-`get` method is the the equalivant of HTTP `GET` method. The super dumb down version of the above snippet is that there is a `GET` request on `/` and as a respond, send string 'Yo'. When the app gets more complicated, we are going to send a JSON back to client that was quired off of a database. 
+`get` method is the the equivalent of HTTP `GET` method. The super dumb down version of the above snippet is that there is a `GET` request on `/` and as a respond, send string 'Yo'. When the app gets more complicated, we are going to send a JSON back to client that was quired off of a database. 
 
-Let's get all the files that are in the same folder as our `app.js`. 
+if the request made it to your server and there was no error, you can do some work and return it to the client. In order to that, you need to check the status on `res` object.
 
 ```nodejs
-app.get(route, (res, req)=>{
-  res.send(path.dirname(__filename));
+app.get('/', (res, req)=>{
+  if(res.statusCode == 200) {
+    res.send('your request made it through.')
+  }
 })
 ```
+Here is a possible, good to know at the point, statusCodes:
 
-
-
+```text
+200: Ok
+404: Not Found
+401: Unauthorized
+503: Service Unavailable
+```
 
 Let's take a look at a `POST` request.
 
@@ -71,13 +78,7 @@ In order to test our `POST` route. We need to use `curl` library. This is how yo
 ```bash
 curl --request POST http://localhost:3001
 ```
+
 When you send your POST request, you usually send an object or a json to the server. We will cover that soon.
 
-
-
-
-Create an express server (link to a video)
-understand basic of routes
-Perform a GET and POST request
-Basic of Respond methods
-
+file used in this   [app.js](../../src/app.js)
