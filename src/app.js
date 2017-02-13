@@ -3,17 +3,20 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-    res.send(__dirname);
+    console.log(res.statusCode); 
 })
 
 app.get('/logout', (req, res) => {
     res.send('will log out');
+
 })
 
 
-
 app.post('/', (req, res)=>{
-    res.send('Posted to / \n');
+    console.log(res.statusCode);
+    if(res.statusCode == 200) {
+        res.send('Posted to / \n');
+    }
 });
 
 
