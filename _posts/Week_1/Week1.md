@@ -84,8 +84,20 @@ You should get:
 ```
 > hello world
 ```
-___
 
+## Proper Project setup
+
+At this point, it's good to go back and make sure that you have started a proper `node`/`npm` project. Go ahead and 
+execute the following command: 
+
+```
+npm init
+```
+
+This adds some additional files to the project such as `package.json` which will hold all the npm modules names that we will be using in our project and other basic information about our project. 
+You can answer the questions that is asked in the terminal if you want to add more information to your project. 
+
+___
  Files used in this section: 
   
  [hello.js](hello.js)

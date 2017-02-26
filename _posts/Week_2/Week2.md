@@ -19,7 +19,7 @@ Go to the folder that we have other files and run the following command:
 npm install express --save
 ```
 
-By adding `--save` we are making sure that express is added as one of our project dependencies to our `packages.json` file.
+By adding `--save` we are making sure that express is added as one of our project dependencies to our `package.json` file.
 
 At this point you want to create a new file to hold our 'app' logics.
 
